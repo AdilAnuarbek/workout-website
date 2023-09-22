@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: aliceblue;
+  height: 100px;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.logo {
+  margin-left: 20px;
+  height: 80px;
+}
+
+.mid-side {
+  display: flex;
+  flex: 4;
+  margin-left: 50px;
+  background-color: aliceblue;
+  height: 80px;
+  align-items: center;
+  padding-right: 10px;
+}
+.workout-plans, .meal-plans {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.workout, .meals {
+  font-family: Roboto, Arial;
+  padding: 10px 15px;
+  background-color: aliceblue;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+  position: relative;
+}
+
+.right-side {
+  display: flex;
+  flex: 1;
+}
+.login-button {
+  background-color: rgb(124, 122, 171);
+  color: aliceblue;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  position: relative;
+}
+
+.workout:hover, .meals:hover, .login-button:hover {
+  background-color: rgb(57, 52, 52);
+  color: white;
+}
+.workout:hover .tooltip, .meals:hover .tooltip, .login-button:hover .tooltip {
+  opacity: 1;
+}
+
+.tooltip {
+  background-color: rgb(143, 143, 143);
+  color: white;
+  bottom: -30px;
+  left: -30px;
+  position: absolute;
+  width: 150px;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 5px 3px;
+  align-items: center;
+  transition: opacity 0.15s;
+}
+.login-button .tooltip {
+  width: 50px;
+  left: 9px;
+}

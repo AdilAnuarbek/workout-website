@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="body.css">
+  <link rel="icon" type="image/x-icon" href="thorfinn.png">
+  <script src="script.js"></script>
+  <title>Adil's workout plan</title>
+</head>
+<body>
+  <div class="header">
+    <div class="left-side">
+      <a href="main.html"><img class="logo" src="logo.png" alt="Website logo"></a>
+    </div>
+    <div class="mid-side">
+      <div class="workout-options">
+        <p class="workout-plans">Workout plans:</p>
+        <button class="workout" id="workout-adil" onclick="goToWorkout('adil')">
+          Adil
+          <div class="tooltip">Adil's workout routine</div>
+        </button>
+        <button class="workout" id="workout-kanysh" onclick="goToWorkout('kanysh')">
+          Kanysh
+          <div class="tooltip">Kanysh's workout routine</div>
+        </button>
+        <button class="workout" id="workout-yeraly" onclick="goToWorkout('yeraly')">
+          Yeraly
+          <div class="tooltip">Yeraly's workout routine</div>
+        </button>
+        <button class="workout" id="workout-yernur" onclick="goToWorkout('yernur')">
+          Yernur
+          <div class="tooltip">Yernur's workout routine</div>
+        </button>
+        <button class="workout" id="workout-alikhan" onclick="goToWorkout('alikhan')">
+          Alikhan
+          <div class="tooltip">Alikhan's workout routine</div>
+        </button>
+      </div>
+      <div class="meal-options">
+        <p class="meal-plans">Meal plans:</p>
+        <button class="meals">
+          Adil
+          <div class="tooltip">Adil's workout routine</div>
+        </button>
+        <button class="meals">
+          Kanysh
+          <div class="tooltip">Kanysh's workout routine</div>
+        </button>
+        <button class="meals">
+          Yeraly
+          <div class="tooltip">Yeraly's workout routine</div>
+        </button>
+        <button class="meals">
+          Yernur
+          <div class="tooltip">Yernur's workout routine</div>
+        </button>
+        <button class="meals">
+          Alikhan
+          <div class="tooltip">Alikhan's workout routine</div>
+        </button>
+      </div>
+    </div>
+    <div class="right-side">
+      <button class="login-button">
+        Login
+        <div class="tooltip">Login</div>
+      </button>
+    </div>
+  </div>
+  <div class="body">
+    <div class="workout-plan-outline">
+      <div class="workout-plan-day">
+        <div class="weekday">Monday</div>
+        <div class="type-of-day">Rest day</div>
+      </div>
+      <div class="workout-plan-day">
+        <div class="weekday">Tuesday</div>
+        <div class="type-of-day">Chest-Triceps</div>
+        <div class="exercises-sets">
+          <div class="exercises">
+            <div class="exercise">Bench Press</div> 
+            <div class="exercise">Skull Crushers</div>
+            <div class="exercise">Incline Dumbbell Bench Press</div>
+            <div class="exercise">Tricep Pressdowns w/ Rope</div>
+            <div class="exercise">Overhead Press (for deltas)</div>
+            <div class="exercise">Overhead Dumbbell Extension</div>
+          </div>
+          <div class="sets">
+            <div class="sets-reps">4x8</div>
+            <div class="sets-reps">4x8</div>
+            <div class="sets-reps">3x10</div>
+            <div class="sets-reps">3x12</div>
+            <div class="sets-reps">3x6</div>
+            <div class="sets-reps">3xfail</div>
+          </div>
+        </div>
+      </div>
+      <div class="workout-plan-day">
+        <div class="weekday">Wednesday</div>
+        <div class="type-of-day">Back-Biceps</div>
+        <div style="color: white; text-align: center; font-size: 20px;">REPLACE FLEX WITH GRID IN TUESDAY</div>
+      </div>
+      <div class="workout-plan-day">
+        <div class="weekday">Thursday</div>
+        <div class="type-of-day">Legs-Shoulders-Triceps</div>
+      </div>
+      <div class="workout-plan-day">
+        <div class="weekday">Friday</div>
+        <div class="type-of-day">Cardio-Back-Biceps-Chest</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
